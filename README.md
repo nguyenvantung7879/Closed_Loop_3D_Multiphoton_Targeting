@@ -14,6 +14,12 @@ The platform combines light-field microscopy, physics-informed volumetric recons
 
 *Figure 2. Target selection, hologram synthesis, multiphoton targeting, and post-stimulation feedback.*
 
+## Closed-loop demonstration
+
+[![Dynamic closed-loop 3D targeting preview](video/Closed_Loop_3D_Multiphoton_Targeting_preview.gif)](video/Closed_Loop_3D_Multiphoton_Targeting.mp4)
+
+*Animated preview of dynamic 3D targeting. Click the preview to open the full 11-cycle LF/3D video.*
+
 ## Contents
 
 ```text
