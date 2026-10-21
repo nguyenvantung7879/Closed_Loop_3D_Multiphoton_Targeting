@@ -7,11 +7,11 @@ The four arrays in `raw_lf/` are unmodified `uint16` camera frames:
 - `static_before.npy` and `static_after.npy`: `StaticQuench_20261017_222041`.
 - `dynamic_before.npy` and `dynamic_after.npy`: `DynamicQuench_20261018_004137`.
 
-These frames preserve the binned camera geometry. They must be registered to the `517 × 517` network grid before LF inference.
+These frames preserve the binned camera geometry. They must be registered to the `517 × 517` network grid before LF inference. NPY is the source array, TIFF is the lossless image export, and PNG is a contrast-scaled preview for GitHub.
 
 ## Registered LF inputs
 
-The three NPZ files in `registered_lf/` contain a network-ready array named `LF`:
+The three NPZ files in `registered_lf/` contain a network-ready array named `LF`. Matching TIFF files preserve the float32 values, while PNG files are display previews:
 
 | File | Background (ADU) |
 |---|---:|
@@ -23,7 +23,7 @@ The first sample is used by `usage/run_lf_network.py`.
 
 ## SLM patterns
 
-The TIFF files in `patterns/` are experimental `1024 × 1024` gray-level patterns:
+The TIFF files in `patterns/` are experimental `1024 × 1024` gray-level patterns. Matching PNG files are included for browser preview:
 
 - `static_quench_pattern.tif`: first pulse from the selected static run.
 - `dynamic_cycle01_pattern.tif`: first pulse from the selected dynamic run.

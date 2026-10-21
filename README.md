@@ -2,6 +2,18 @@
 
 This repository contains the two trained networks used in the work, small example datasets, example SLM patterns, and the final manuscript figures.
 
+## System overview
+
+The platform combines light-field microscopy, physics-informed volumetric reconstruction, three-dimensional target selection, DeepCGH hologram generation, multiphoton exposure, and fluorescence-feedback verification in a closed loop.
+
+![Closed-loop 3D multiphoton targeting system](figures/fig1/Figure_1.png)
+
+*Figure 1. Optical system and image-to-pattern pipeline.*
+
+![Closed-loop targeting workflow](figures/fig2/Figure_2.png)
+
+*Figure 2. Target selection, hologram synthesis, multiphoton targeting, and post-stimulation feedback.*
+
 ## Contents
 
 ```text
@@ -15,8 +27,12 @@ examples/
 usage/
   run_lf_network.py
   run_deepcgh.py
+benchmark/
+  BENCHMARK.md         Compact timing summary
 figures/
-  fig1/ ... fig5/      Final paper figures; files will be added by the authors
+  fig1/ ... fig5/      Final paper figures
+video/
+  Closed_Loop_3D_Multiphoton_Targeting.mp4
 ```
 
 Figure- and video-rendering scripts are intentionally not included. The repository demonstrates the core pipeline:
@@ -59,11 +75,19 @@ python usage/run_deepcgh.py
 
 The example warms up the network, generates a three-target pattern, and writes `outputs/deepcgh_pattern.tif`.
 
+## Benchmark
+
+A compact image-to-pattern timing summary is available in [benchmark/BENCHMARK.md](benchmark/BENCHMARK.md). It reports 10 measured trials after discarding the first measured cold-start trial.
+
+## Supplementary video
+
+The paired raw-LF and reconstructed-3D demonstration will be available as [Closed_Loop_3D_Multiphoton_Targeting.mp4](video/Closed_Loop_3D_Multiphoton_Targeting.mp4). The video shows the complete dynamic closed-loop targeting sequence, including target motion, targeting events, and feedback states.
+
 ## Example data
 
-- `examples/raw_lf`: static and dynamic before/after camera frames.
-- `examples/registered_lf`: three network-ready LF examples.
-- `examples/patterns`: one static and two dynamic experimentally generated SLM patterns.
+- `examples/raw_lf`: static and dynamic before/after camera frames, with NPY, TIFF, and PNG preview files.
+- `examples/registered_lf`: three network-ready LF examples, with NPZ, TIFF, and PNG preview files.
+- `examples/patterns`: one static and two dynamic experimentally generated SLM patterns, with TIFF and PNG files.
 
 These examples demonstrate file formats and inference. They are not a complete archive of the experimental sessions.
 
