@@ -1,0 +1,7 @@
+torch>=2.5,<3
+numpy
+scipy
+h5py
+matplotlib
+tifffile
+tqdm
