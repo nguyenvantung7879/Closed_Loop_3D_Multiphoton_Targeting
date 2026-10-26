@@ -13,4 +13,14 @@ One recorded raw LF frame with four targets, repeated for 11 trials on an NVIDIA
 
 Imaging-to-pattern = camera period (16.67 ms) + measured computation (32.75 ± 1.72 ms) + SLM allowance (3 ms); every trial is below 60 ms (50.2–55.3 ms). The SLM was not driven in this benchmark.
 
-Test setup: Windows, Python 3.11, PyTorch 2.12 (CUDA 12.6), LF network with AMP + CUDA Graph, DeepCGH 256 × 256 followed by 1024 × 1024 pattern generation with GDD.
+## Test environment
+
+- GPU: NVIDIA GeForce RTX 3090
+- Operating system: Windows 11 (build 10.0.26200)
+- Python: 3.11.9
+- PyTorch: 2.12.0+cu126
+- CUDA runtime: 12.6, cuDNN 9.10.02
+- LF inference: AMP, CUDA Graph, final H1/H2/fusion output, GPU-resident 3D volume
+- 3D detection and DeepCGH + GDD: GPU-resident
+- DeepCGH: 256 × 256 inference followed by 1024 × 1024 gray-level pattern generation
+- CPU model and installed system RAM: not recorded
