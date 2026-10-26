@@ -23,4 +23,5 @@ Imaging-to-pattern = camera period (16.67 ms) + measured computation (32.75 ± 1
 - LF inference: AMP, CUDA Graph, final H1/H2/fusion output, GPU-resident 3D volume
 - 3D detection and DeepCGH + GDD: GPU-resident
 - DeepCGH: 256 × 256 inference followed by 1024 × 1024 gray-level pattern generation
-- CPU model and installed system RAM: not recorded
+- CPU: Intel Core i7-6700 @ 3.40 GHz
+- System RAM: 32 GB
