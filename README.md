@@ -6,11 +6,11 @@ This repository contains the two trained networks used in the work, small exampl
 
 The platform combines light-field microscopy, physics-informed volumetric reconstruction, three-dimensional target selection, DeepCGH hologram generation, multiphoton exposure, and fluorescence-feedback verification in a closed loop.
 
-![Closed-loop 3D multiphoton targeting system](figures/fig1/Figure_1.png)
+![Closed-loop 3D multiphoton targeting system](figures/Picture1.png)
 
 *Figure 1. Optical system and image-to-pattern pipeline.*
 
-![Closed-loop targeting workflow](figures/fig2/Figure_2.png)
+![Closed-loop targeting workflow](figures/Picture2.png)
 
 *Figure 2. Target selection, hologram synthesis, multiphoton targeting, and post-stimulation feedback.*
 
@@ -18,7 +18,7 @@ The platform combines light-field microscopy, physics-informed volumetric recons
 
 [![Dynamic closed-loop 3D targeting preview](video/Closed_Loop_3D_Multiphoton_Targeting_preview.gif)](video/Closed_Loop_3D_Multiphoton_Targeting.mp4)
 
-*Animated preview of dynamic 3D targeting. Click the preview to open the full 11-cycle LF/3D video.*
+*Animated preview of dynamic 3D targeting. Click the preview to open the full 11-cycle LF/3D video, which includes the labelled 10-ms quench exposures (shown extended for visualization).*
 
 ## Contents
 
@@ -36,7 +36,7 @@ usage/
 benchmark/
   BENCHMARK.md         Compact timing summary
 figures/
-  fig1/ ... fig5/      Final paper figures
+  Picture1.png ... Picture5.png   Final paper figures 1-5
 video/
   Closed_Loop_3D_Multiphoton_Targeting.mp4
 ```
@@ -87,7 +87,7 @@ A compact image-to-pattern timing summary is available in [benchmark/BENCHMARK.m
 
 ## Supplementary video
 
-The paired raw-LF and reconstructed-3D demonstration will be available as [Closed_Loop_3D_Multiphoton_Targeting.mp4](video/Closed_Loop_3D_Multiphoton_Targeting.mp4). The video shows the complete dynamic closed-loop targeting sequence, including target motion, targeting events, and feedback states.
+The paired raw-LF and reconstructed-3D demonstration is provided as [Closed_Loop_3D_Multiphoton_Targeting.mp4](video/Closed_Loop_3D_Multiphoton_Targeting.mp4). The video shows the complete dynamic closed-loop targeting sequence, including target motion, targeting events, and feedback states.
 
 ## Example data
 
