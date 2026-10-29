@@ -18,7 +18,7 @@ The platform combines light-field microscopy, physics-informed volumetric recons
 
 [![Dynamic closed-loop 3D targeting preview](video/Closed_Loop_3D_Multiphoton_Targeting_preview.gif)](video/Closed_Loop_3D_Multiphoton_Targeting.mp4)
 
-*Animated preview of dynamic 3D targeting. Click the preview to open the full 11-cycle LF/3D video, which includes the labelled 10-ms quench exposures (shown extended for visualization).*
+*Animated preview of dynamic 3D targeting. Click the preview to open the full 11-cycle LF/3D video (2D raw LFM with the 30 × 30 µm target ROI, and the reconstructed 3D volume).*
 
 ## Contents
 
